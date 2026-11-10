@@ -27,6 +27,13 @@ header p {
     font-size: 26px;
 }
 
+.controls div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 input,
 select,
 button {
