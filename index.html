@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiikkihaku</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Musiikkihaku</h1>
+        <p>Hae artistien albumeita</p>
+    </header>
+
+    <main>
+
+        <section class="controls">
+
+            <div>
+            <label for="artistSelect">
+                Valitse artisti:
+            </label>
+
+            <select id="artistSelect">
+                <option value="" selected>Valitse artisti</option>
+                <option value="Happoradio">Happoradio</option>
+                <option value="Metallica">Metallica</option>
+                <option value="Isac Elliot">Isac Elliot</option>
+                <option value="Leevi and the leavings">Leevi and the leavings</option>
+                <option value="Ghost">Ghost</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="searchInput">
+                Tai hae artistia:
+            </label>
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Kirjoita artistin nimi">
+
+            <button id="searchBtn">
+                Hae
+            </button>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <div id="tracks"></div>
+        </section>
+
+        <section>
+
+            <h2>Albumit</h2>
+
+            <div id="albums">
+
+                <p>Valitse artisti nähdäksesi albumit.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
