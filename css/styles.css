@@ -28,11 +28,24 @@ header p {
 }
 
 .controls div {
-    display: grid;
-    grid-template-columns: 230px 400px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
+    width: 100%;
+}
+
+.controls label {
+    width: 190px;
+    text-align: right;
+}
+
+.controls input {
+    width: 250px;
+}
+
+.controls select {
+    width: 270px;
 }
 
 input,
