@@ -91,6 +91,7 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     align-items: start;
+    max-height: 250px;;
 }
 
 .album-card {
