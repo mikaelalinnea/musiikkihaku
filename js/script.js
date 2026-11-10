@@ -105,4 +105,3 @@ function loadTopTracks(artistName) {
     });
 }
 
-loadAlbums("Happoradio");
