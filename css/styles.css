@@ -93,6 +93,11 @@ h2 {
     align-items: start;
 }
 
+#albums p {
+    text-align: center;
+    font-size: 26px;
+}
+
 .album-card {
     background-color: rgb(224, 228, 194);
     border-radius: 10px;
