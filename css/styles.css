@@ -28,7 +28,8 @@ header p {
 }
 
 .controls div {
-    display: flex;
+    display: grid;
+    grid-template-columns: 230px 400px;
     align-items: center;
     justify-content: center;
     gap: 15px;
