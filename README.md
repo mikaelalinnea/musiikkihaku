@@ -22,7 +22,7 @@ Musiikkihaku on sovellus, jonka avulla käyttäjä voi etsiä artistien albumeit
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
+- **Julkaistu sovellus:** (https://musiikkihaku.netlify.app/)
 - **GitHub-repositorio:** (https://github.com/mikaelalinnea/musiikkihaku)
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
 
@@ -56,7 +56,9 @@ Musiikkihaku on sovellus, jonka avulla käyttäjä voi etsiä artistien albumeit
 
 ## Kuvakaappaukset
 
-[Kuvakaappaus sovelluksesta](img/screenshot.png)
+![Kuvakaappaus sovelluksesta](img/Kuva1.png)
+![Kuvakaappaus sovelluksesta](img/Kuva2.png)
+![Kuvakaappaus sovelluksesta](img/Kuva3.png)
 
 ## Tunnetut virheet / puutteet
 
