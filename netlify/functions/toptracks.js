@@ -1,3 +1,4 @@
+//Hakee artistin suosituimmat kappaleet (Last.fm API)
 export async function handler(event) {
   const artist = event.queryStringParameters.artist;
 

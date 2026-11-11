@@ -1,8 +1,10 @@
+//HTML-elementit haetaan
 const artistSelect = document.getElementById("artistSelect");
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 const albums = document.getElementById("albums");
 
+//Artisti valitaan dropdown-listasta
 artistSelect.addEventListener("change", function () {
     searchInput.value = "";
     if (this.value !== "") {
@@ -10,6 +12,7 @@ artistSelect.addEventListener("change", function () {
     }
 });
 
+//Artisti haetaan hakukentällä
 searchBtn.addEventListener("click", function () {
 
     const artistName = 
@@ -21,6 +24,7 @@ searchBtn.addEventListener("click", function () {
     }
 });
 
+//Artistin albumit haetaan Last.fm API:n kautta
 function loadAlbums(artistName) {
 
     loadTopTracks(artistName);
@@ -74,6 +78,7 @@ function loadAlbums(artistName) {
     });
 }
 
+//Artistin kolme suosituinta kappaletta haetaanLast.fm API:n kautta
 function loadTopTracks(artistName) {
 
     fetch(
@@ -104,4 +109,3 @@ function loadTopTracks(artistName) {
         console.error(error);
     });
 }
-
