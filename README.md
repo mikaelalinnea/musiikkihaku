@@ -6,104 +6,79 @@
 
 ### Projektin idea
 
-Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+Musiikkihaku on sovellus, jonka avulla käyttäjä voi etsiä artistien albumeita Last.fm-palvelun kautta. Käyttäjä voi valita artistin sivulla olevasta listasta tai itse hakukentän avulla. Sovellus näyttää myös artistin top 3 - kappaletta. Sovellus on tarkoitettu kenelle tahansa, joka haluaa käydä läpi jonkun artistin albumeita.
 
 ### Suunnitellut toiminnot
 
-Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
-
-- Toiminto 1
-- Toiminto 2
-- Toiminto 3
+- Artistin valinta alasvetovalikosta
+- Artistin haku hakukentällä
+- Albumien kuvien ja nimen näyttäminen
+- Artistin suosituimpien kappaleiden näyttäminen
+- Linkki albumin lisätietoihin
 
 ### Rautalankamalli / luonnos
 
-Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovelluksen luonnoksesta. Luonnoksessa tulee näkyä sovelluksen pääasiallinen näkymä ja tärkeimmät elementit.
-
-Esimerkki kuvan lisäämisestä:
-
-![Rautalankamalli](img/wireframe.png)
+![Rautalankamalli](img/Rautalankamalli.png)
 
 ## Verkkolinkit
 
 - **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
+- **GitHub-repositorio:** (https://github.com/mikaelalinnea/musiikkihaku)
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
 
 ## Tietoja sovelluksesta
 
-**[Projektin nimi]** on verkkosovellus, joka ...
-
-Kuvaile lyhyesti sovelluksen tarkoitus ja tärkeimmät toiminnot.
+**Musiikkihaku** on verkkosovellus, joka hyödyntää Last.fm APIa eri musiikkitietojen hakemiseen. Käyttäjä voi etsiä artisteja, jolloin sivulla näkyy sen artistin albumit sekä suosituimmat kappaleet. Sivulta pääsee myös jokaisen albumin kohdalta linkin kautta katsomaan lisätietoja albumista, kuten kappaleet. Sovellus hyödyntää Netlify API-avaimen suojaamiseen.
 
 ## Teknologiat
 
-Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
-
 - HTML – sivun rakenne
 - CSS – ulkoasu ja asettelu
-- JavaScript – toiminnallisuus, DOM-skriptaus ja lomakkeiden validointi
-- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä
+- JavaScript – toiminnallisuus ja API-kutsut
+- Last.fm API - artisti ja albumitiedot
+- Netlify - sovelluksen julkaisu, API-avaimen suojaaminen
 
 ## Sovelluksen käyttö
 
-Kirjoita lyhyet käyttöohjeet sovellukselle.
-
 1. Avaa julkaistu sovellus yllä olevasta linkistä.
-2. Täytä lomakkeen kentät.
-3. Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.
-4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.
+2. Valitse artisti alasvetovalikosta tai kirjoita artistin nimi hakukenttään.
+3. Hae artisti listasta tai paina Hae.
+4. Sovellus näyttää artistin albumit sekä kolme suosituinta kappaletta.
+5. Lisätietoja-linkistä pääsee Last.fm albumisivulle.
 
 ## Sovelluksen käynnistäminen paikallisesti
 
 1. Kloonaa tai lataa tämä repositorio omalle koneellesi.
 2. Avaa projektikansio.
-3. Avaa `index.html` selaimessa.
+3. Lisää oma Last.fm API-avain Netilfyn ympäristömuuttujiin.
+4. Käynnistä projekti Netlify Dev-ympäristössä.
+5. Avaa sovellus selaimessa.
 
 ## Kuvakaappaukset
 
-Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksestasi.
-
-Esimerkki kuvan lisäämisestä:
-
-![Kuvakaappaus sovelluksesta](img/screenshot.png)
+[Kuvakaappaus sovelluksesta](img/screenshot.png)
 
 ## Tunnetut virheet / puutteet
 
-Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita rajoituksia.
-
-Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
-
-## Työn jakautuminen
-
-*Täytä tämä osio vain, jos teit projektin parityönä.*
-
-Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
-
-- Tekijä 1: ...
-- Tekijä 2: ...
+ **Ei tunnettuja virheitä.**
 
 ## Oma arvio ja oppimisen reflektointi
 
 Pohdi työtäsi ja oppimisprosessiasi.
 
-- Missä onnistuin?
-- Mikä oli haastavaa?
-- Mitä parantaisin, jos aikaa olisi enemmän?
-- Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta?
-- Mikä jäi epäselväksi tai mistä haluaisin oppia lisää?
-- Oma arvio projektista: **xx/10 pistettä**
+- Onnistuin toteuttamaan toimivan verkkosovelluksen, joka hyödyntää Last.fm APIa. Sain toimimaan että käyttäjä pystyy hakea artisteja alasvetovalikosta sekä hakukentän avulla. Sovellus näyttää albumit, albumikuvat sekä artistin suosituimmat kappaleet.
+- Haastavinta oli Last.fm API:n käyttöönotto, API-kutsujen rakentaminen ja Netlifyn käyttö.
+- Jos olisi enemmän aikaa, lisäisin sivulle enemmän lisätietoja.
+- Projektin aikana opin käyttämään Last.fm APIa ja käsittelemään JSON muotoista dataa JavaScriptissä. Opin paremmin API-kutsujen tekemistä ja tiedon näyttämistä sivulla. Opin myös suojaamaan API-avaimen Netlifyn kautta.
+- Haluaisin oppia lisää API-rajapinnoista ja niiden käytöstä, enemmän Netlifyn käytöstä sekä miten frontend ja backend toimivat yhdessä verkkosovelluksissa.
+- Oma arvio projektista: **8/10 pistettä**
 
 ## Lähteet ja kiitokset
 
-Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesimerkit.
-
-Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
-
-- [Lähteen tai tutoriaalin nimi](https://example.com/)
-- [Kuvalähde](https://example.com/)
-- Käytetty tekoälytyökalu: ...
-  - Miten työkalua käytettiin: ...
+- Kurssimateriaali & aikaisemmat workshopit.
+- [Last.fm/api](https://www.last.fm/api)
+- Käytetty tekoälytyökalu: Microsoft Copilot
+  - Tekoälyä on käytetty koodin virheiden etsimiseen jos jokin toiminto ei toiminut oikein sekä koodin siistimiseen. Tekoäly myös kirjoitti README.md "Sovelluksen käynnistäminen paikallissesti", sillä en ollut ihan varma miten se tehdään.
 
   ## Lisenssi
 
